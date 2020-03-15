@@ -2,13 +2,13 @@ import './styles.css';
 
 var context = document.querySelector('canvas').getContext('2d');
 
-var index = 10;
-var width = context.canvas.width;
-var height = context.canvas.height;
+const index = 10;
+const width = context.canvas.width;
+const height = context.canvas.height;
 
-for (var i = 0; i < index; i = i + 1) {
-  var x = (i * width) / (index - 1);
-  var y = (i * height) / (index - 1);
+for (let i = 0; i < index; i = i + 1) {
+  const x = (i * width) / (index - 1);
+  const y = (i * height) / (index - 1);
   drawLine(0, y, x, height);
 }
 
